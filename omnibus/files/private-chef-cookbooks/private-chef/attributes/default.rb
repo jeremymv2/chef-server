@@ -674,7 +674,7 @@ default['private_chef']['bookshelf']['access_key_id'] = "generated-by-default"
 default['private_chef']['bookshelf']['secret_access_key'] = "generated-by-default"
 # Default: set to Host: header. Override to hardcode a url, "http://..."
 default['private_chef']['bookshelf']['external_url'] = :host_header
-default['private_chef']['bookshelf']['storage_type'] = :filesystem
+default['private_chef']['bookshelf']['storage_type'] = 'filesystem'
 # This retries connections that are rejected because pooler queue is maxed out.
 default['private_chef']['bookshelf']['sql_retry_count'] = 0
 # Intervals are in milliseconds

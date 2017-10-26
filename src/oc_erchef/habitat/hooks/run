@@ -3,6 +3,7 @@ exec 2>&1
 
 # Die if rabbitmq isn't available
 {{#unless bind.rabbitmq ~}}
+exec echo "No bind.rabbitmq"
 exit 1
 {{/unless ~}}
 

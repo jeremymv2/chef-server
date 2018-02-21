@@ -19,7 +19,7 @@ require "optparse"
 require "ostruct"
 require "chef/key"
 
-# due to how things are being exec'ed, the CWD will be all wrong,
+# Due to how things are being exec'ed, the CWD will be all wrong,
 # so we want to use the full path when loaded from omnibus-ctl,
 # but we need the local relative path for it to work with rspec
 begin

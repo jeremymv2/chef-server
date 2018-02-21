@@ -15,6 +15,7 @@
 
 require 'shellwords'
 
+# detect if running as a habitat service
 if File.exist?('/hab/svc/chef-server-ctl/PID')
   knife_config = "/hab/svc/chef-server-ctl/config/pivotal.rb"
   knife_path = `cat /hab/svc/chef-server-ctl/config/pkg_path`.chomp + "/chef/bin/knife"

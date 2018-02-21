@@ -1,4 +1,5 @@
 #!/opt/opscode/embedded/bin/ruby
+
 require 'rubygems'
 gem 'omnibus-ctl'
 require 'omnibus-ctl'
